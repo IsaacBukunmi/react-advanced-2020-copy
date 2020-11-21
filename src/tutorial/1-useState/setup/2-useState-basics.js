@@ -3,13 +3,8 @@ import React, { useState } from 'react';
 const UseStateBasics = () => {
   console.log(useState);
   const [text, setText] = useState('random title')
+  // Runs when the app is rendered even before clickng on a button
   const handleClick = () => {
-    // if(text === 'random title'){
-    //   setText('Hello World')
-    // }else{
-    //   setText('random title')
-    // }
-
     text =='random title' ? setText('Hello World') : setText('random title');
   }
   return (
